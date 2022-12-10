@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Vehículos</ion-title>
+    <ion-icon slot="start" name="car-outline"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/vehiculos/crear-vehiculo']" class="btn">Crear Vehículo</button>
+        </div>
+      </ion-col>
+
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/vehiculos/editar-vehiculo']" class="btn">Editar Vehículo</button>
+        </div>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/vehiculos/listar-vehiculos']" class="btn">Listar Vehículos</button>
+        </div>
+      </ion-col>
+
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/vehiculos/eliminar-vehiculo']" class="btn">Eliminar Vehículo</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

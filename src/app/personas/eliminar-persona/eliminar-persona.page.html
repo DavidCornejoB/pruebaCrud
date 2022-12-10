@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Eliminar Personas</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar
+      placeholder="Buscar"
+      animated
+      (ionChange)="searchCustomer($event)"
+    >
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="lista">
+    <ion-list>
+      <ion-list-header> LISTA DE PERSONAS OBTENIDA DESDE FIREBASE </ion-list-header>
+
+      <ion-item *ngFor="let persona of listaPersonas">
+        <ion-avatar slot="end">
+          <ion-icon name="remove-circle-outline" (click)="eliminarPersona(persona.id)"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="colorBlue">{{persona.nombres}} {{persona.apellidos}}</h2>
+          <p>cédula: {{persona.cedula}}</p>
+          <p>teléfono: {{persona.telefono}}</p>
+          <p>direccion: {{persona.direccion}}</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+  </div>
+</ion-content>

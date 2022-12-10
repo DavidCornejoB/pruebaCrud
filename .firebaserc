@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "base-fire-ionic": {
+      "hosting": {
+        "app": [
+          "base-fire-ionic"
+        ]
+      }
+    },
+    "base-fire-ionic-f0412": {
+      "hosting": {
+        "app": [
+          "base-fire-ionic-f0412"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "base-fire-ionic-f0412"
+  }
+}

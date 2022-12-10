@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listar Vehículos</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar placeholder = "Buscar" animated (ionChange)="searchCustomer($event)">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" *ngFor="let car of vehiculos">
+      <ion-card (click)="presentAlert1()">
+        <img src="../../../assets/vehiculos/{{car.imagen}}">
+        <div class="card-title">{{car.marca}} {{car.modelo}}</div>
+        <p>color: {{car.color}}</p>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

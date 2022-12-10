@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Vehículo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Marca</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+  
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Modelo</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+  
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Color</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="3" sizeMg="4" sizeXs="6">
+          <button ion-button [routerLink]="['/personas/listar-personas']" class="btn">Guardar Vehículo</button>
+      </ion-col>
+      <ion-col sizeLg="3" sizeMg="4" sizeXs="6">
+          <button ion-button [routerLink]="['/vehiculos']" class="btn">Cancelar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

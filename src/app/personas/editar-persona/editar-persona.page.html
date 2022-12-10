@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Editar datos de una Persona</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar
+      placeholder="Buscar"
+      animated
+      (ionChange)="searchCustomer($event)"
+    >
+    </ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div id="lista">
+    <ion-list>
+      <ion-list-header> LISTA DE PERSONAS OBTENIDA DESDE FIREBASE </ion-list-header>
+
+      <ion-item *ngFor="let persona of searchedUser">
+        <ion-avatar slot="end">
+          <ion-icon name="create" [routerLink]="['/formulario-editar-persona', persona.id]"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="colorBlue">{{persona.nombres}} {{persona.apellidos}}</h2>
+          <p>cédula: {{persona.cedula}}</p>
+          <p>teléfono: {{persona.telefono}}</p>
+          <p>direccion: {{persona.direccion}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

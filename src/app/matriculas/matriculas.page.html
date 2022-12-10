@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Matrículas</ion-title>
+    <ion-icon slot="start" name="document-outline"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/matriculas/crear-matricula']" class="btn">Crear Matrícula</button>
+        </div>
+      </ion-col>
+
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/matriculas/editar-matricula']" class="btn">Editar Matrícula</button>
+        </div>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/matriculas/listar-matriculas']" class="btn">Listar Matrícula</button>
+        </div>
+      </ion-col>
+
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/matriculas/eliminar-matricula']" class="btn">Eliminar Matrícula</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

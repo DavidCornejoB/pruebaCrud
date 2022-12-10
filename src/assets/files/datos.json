@@ -1,0 +1,46 @@
+{
+    "personas": [
+        {
+            "cedula": "0105585525",
+            "nombres": "Luis David",
+            "apellidos": "Cornejo Bravo",
+            "telefono": "4118451",
+            "direccion": "Misicata"
+        },
+        {
+            "cedula": "0101234567",
+            "nombres": "Juan Sebastián",
+            "apellidos": "Cornejo Bravo",
+            "telefono": "4118451",
+            "direccion": "Misicata"
+        },
+        {
+            "cedula": "0102931466",
+            "nombres": "Luis Antonio",
+            "apellidos": "Cornejo Ajila",
+            "telefono": "0997528511",
+            "direccion": "Misicata"
+        }
+    ],
+
+    "vehiculos": [
+        {
+            "marca": "Ford",
+            "modelo": " 68' Mustang GT",
+            "color": "negro",
+            "imagen": "mustang.jpg"
+        },
+        {
+            "marca": "Dogde",
+            "modelo": "Challenger",
+            "color": "Rojo",
+            "imagen": "challenger.jpg"
+        },
+        {
+            "marca": "Chevrolet",
+            "modelo": "Camaro SS",
+            "color": "Azul",
+            "imagen": "camaro.jpg"
+        }
+    ]
+}

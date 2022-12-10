@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personas</ion-title>
+    <ion-icon slot="start" name="people-outline"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/personas/crear-persona']" class="btn">Crear Persona</button>
+        </div>
+      </ion-col>
+
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/personas/editar-persona']" class="btn">Editar Persona</button>
+        </div>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/personas/listar-personas']" class="btn">Listar Personas</button>
+        </div>
+      </ion-col>
+
+      <ion-col sizeLg="4" sizeMg="4" sizeXs="6">
+        <div id="container">
+          <button ion-button [routerLink]="['/personas/eliminar-persona']" class="btn">Eliminar Personas</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
